@@ -124,11 +124,10 @@ function Map(props) {
     },
     [handleViewportChange]
   );
-  const geolocateControlStyle= {
-    
-    right: 10, 
-    bottom:50,  
-  };
+  // const geolocateControlStyle= {
+  //   right: 10, 
+  //   bottom:50,  
+  // };
 
   
 
@@ -162,12 +161,12 @@ function Map(props) {
             </button>
       </Marker>
     ))}
-     <GeolocateControl
+     {/* <GeolocateControl
         style={geolocateControlStyle}
         positionOptions={{enableHighAccuracy: true}}
         trackUserLocation={true}
         
-      />
+      /> */}
         <Geocoder
           mapRef={mapRef}
           onViewportChange={handleGeocoderViewportChange}

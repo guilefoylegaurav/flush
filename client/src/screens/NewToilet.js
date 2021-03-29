@@ -52,11 +52,11 @@ const NewToilet = ()  => {
         zoom: 10
       });
       const mapRef = useRef();
-      const geolocateControlStyle= {
+      // const geolocateControlStyle= {
         
-        right: 10, 
-        bottom:50,  
-      };
+      //   right: 10, 
+      //   bottom:50,  
+      // };
       const handleViewportChange = useCallback(
         (newViewport) => setViewport(newViewport),
         []
@@ -318,12 +318,12 @@ const NewToilet = ()  => {
             </button>
       </Marker>
     ))} */}
-     <GeolocateControl
+     {/* <GeolocateControl
         style={geolocateControlStyle}
         positionOptions={{enableHighAccuracy: true}}
         trackUserLocation={true}
         
-      />
+      /> */}
         <Geocoder
           mapRef={mapRef}
           onViewportChange={handleGeocoderViewportChange}
